@@ -17,12 +17,53 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* NEW */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+/* LEFT SIDE (NAME + IMAGE) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav h2 {
     color: #38bdf8;
+    transition: all 0.3s ease;
 }
 
+/* PROFILE IMAGE IN HEADER (HIDDEN INITIALLY) */
+.nav-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #38bdf8;
+
+    /* NEW */
+    display: none;
+}
+
+/* WHEN SCROLLED */
+nav.scrolled {
+    padding: 10px 40px;
+}
+
+nav.scrolled .nav-avatar {
+    display: block;
+    animation: avatarFade 0.4s ease-in-out;
+}
+
+nav.scrolled h2 {
+    font-size: 18px;
+}
+
+/* NAV MENU */
 nav ul {
     list-style: none;
     display: flex;
@@ -132,6 +173,7 @@ nav ul li a:hover {
     justify-content: center;
     gap: 30px;
     padding: 12px;
+    z-index: 999;
 }
 
 .sticky-bar a {
@@ -146,6 +188,18 @@ footer {
     padding: 25px;
     text-align: center;
     margin-top: 40px;
+}
+
+/* ===== HEADER IMAGE ANIMATION ===== */
+@keyframes avatarFade {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* ===== MOBILE ===== */
