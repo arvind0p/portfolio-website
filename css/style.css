@@ -5,6 +5,7 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* BODY */
 body {
     background: #0f172a;
     color: #e5e7eb;
@@ -27,7 +28,7 @@ nav h2 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 22px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -66,20 +67,20 @@ nav ul li a:hover {
 }
 
 .hero p {
-    margin-top: 8px;
     font-size: 16px;
     color: #cbd5f5;
+    margin-top: 8px;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section h2 {
     margin-bottom: 15px;
     color: #38bdf8;
 }
 
 .section p {
-    margin-bottom: 12px;
     line-height: 1.6;
+    margin-bottom: 12px;
 }
 
 .section ul li {
@@ -90,7 +91,6 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     margin-top: 15px;
-    margin-right: 10px;
     padding: 12px 25px;
     background: #38bdf8;
     color: #020617;
@@ -99,7 +99,7 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-/* MOBILE */
+/* 🔥 MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -113,3 +113,10 @@ nav ul li a:hover {
 
     .container {
         margin: 20px;
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
