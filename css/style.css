@@ -10,7 +10,7 @@ body {
     color: #e5e7eb;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 nav {
     background: #020617;
     padding: 15px 40px;
@@ -21,7 +21,6 @@ nav {
 
 nav h2 {
     color: #38bdf8;
-    font-weight: 600;
 }
 
 nav ul {
@@ -33,14 +32,13 @@ nav ul {
 nav ul li a {
     color: #e5e7eb;
     text-decoration: none;
-    font-size: 15px;
 }
 
 nav ul li a:hover {
     color: #38bdf8;
 }
 
-/* CONTAINER */
+/* ===== CONTAINER ===== */
 .container {
     max-width: 1000px;
     margin: 40px auto;
@@ -49,7 +47,7 @@ nav ul li a:hover {
     border-radius: 14px;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
     text-align: center;
 }
@@ -61,17 +59,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 34px;
-}
-
-.hero p {
-    font-size: 16px;
-    color: #cbd5f5;
-    margin-top: 10px;
-}
-
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 .section h2 {
     color: #38bdf8;
     margin-bottom: 15px;
@@ -86,7 +74,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* BUTTONS */
+/* ===== BUTTON ===== */
 .btn {
     display: inline-block;
     margin: 12px 8px 0 0;
@@ -98,56 +86,69 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-/* CONTACT BOX */
-.contact-box {
-    display: flex;
-    justify-content: space-between;
+/* ===== SKILLS CARDS ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-.contact-card {
-    flex: 1;
-    min-width: 220px;
+.skill-card {
     background: #020617;
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 12px;
+    border-left: 4px solid #38bdf8;
 }
 
-.contact-card a {
+/* ===== EXPERIENCE TIMELINE ===== */
+.timeline {
+    border-left: 3px solid #38bdf8;
+    padding-left: 25px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: #38bdf8;
+    border-radius: 50%;
+}
+
+/* ===== STICKY CONTACT BAR ===== */
+.sticky-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #020617;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px;
+}
+
+.sticky-bar a {
     color: #38bdf8;
     text-decoration: none;
     font-weight: 600;
 }
 
-/* ANIMATIONS */
-.fade-in {
-    animation: fadeIn 1.2s ease-in-out;
+/* ===== FOOTER ===== */
+footer {
+    background: #020617;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.slide-up {
-    animation: slideUp 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -162,9 +163,5 @@ nav ul li a:hover {
     .container {
         margin: 20px;
         padding: 25px;
-    }
-
-    .hero h1 {
-        font-size: 26px;
     }
 }
