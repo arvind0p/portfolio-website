@@ -18,7 +18,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    /* NEW */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,15 +36,13 @@ nav h2 {
     transition: all 0.3s ease;
 }
 
-/* PROFILE IMAGE IN HEADER (HIDDEN INITIALLY) */
+/* PROFILE IMAGE IN HEADER */
 .nav-avatar {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #38bdf8;
-
-    /* NEW */
     display: none;
 }
 
@@ -79,6 +76,49 @@ nav ul li a:hover {
     color: #38bdf8;
 }
 
+/* ===== HERO VIDEO SECTION ===== */
+.hero-video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.75);
+    z-index: -1;
+}
+
+.hero-content {
+    color: #ffffff;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 20px;
+}
+
 /* ===== CONTAINER ===== */
 .container {
     max-width: 1000px;
@@ -88,7 +128,7 @@ nav ul li a:hover {
     border-radius: 14px;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO (OLD IMAGE FALLBACK) ===== */
 .hero {
     text-align: center;
 }
@@ -125,6 +165,10 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
+}
+
+.btn:hover {
+    background: #0ea5e9;
 }
 
 /* ===== SKILLS CARDS ===== */
@@ -217,5 +261,14 @@ footer {
     .container {
         margin: 20px;
         padding: 25px;
+    }
+
+    .hero-video {
+        height: 90vh;
+    }
+
+    .hero-profile {
+        width: 120px;
+        height: 120px;
     }
 }
