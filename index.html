@@ -20,16 +20,18 @@
 
 <!-- ===== HERO VIDEO ===== -->
 <section class="hero-video">
+
     <video autoplay muted loop playsinline class="bg-video">
         <source src="assets/header-bg.mp4" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
 
-    <!-- ONLY NAME ON VIDEO -->
+    <!-- FULL SCREEN TYPING NAME -->
     <div class="hero-content">
-        <h1>Arvind Chaudhary</h1>
+        <span id="typing-text"></span><span class="cursor">|</span>
     </div>
+
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -75,7 +77,6 @@
                 <p><em>June 2024 – Present</em></p>
                 <p>
                     Supporting sales operations, business development, and client management.
-                    Actively involved in lead generation, negotiations, and promotional campaigns.
                 </p>
             </div>
 
@@ -95,7 +96,6 @@
 <section id="contact" class="section gray">
     <div class="container center">
         <h2>Contact</h2>
-        <p>Let’s connect for opportunities and collaborations.</p>
 
         <div class="contact-links">
             <a href="tel:+919026217441">📞 Call</a>
@@ -106,16 +106,31 @@
     </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
     © 2026 Arvind Chaudhary | Marketing & Business Development
 </footer>
 
+<!-- ===== TYPING SCRIPT ===== -->
 <script>
-    const nav = document.getElementById("mainNav");
-    window.addEventListener("scroll", () => {
-        nav.classList.toggle("scrolled", window.scrollY > 100);
-    });
+    const text = "Arvind Chaudhary";
+    const typing = document.getElementById("typing-text");
+    let index = 0;
+
+    function typeLoop() {
+        if (index <= text.length) {
+            typing.textContent = text.slice(0, index);
+            index++;
+            setTimeout(typeLoop, 140);
+        } else {
+            setTimeout(() => {
+                index = 0;
+                typing.textContent = "";
+                typeLoop();
+            }, 1800);
+        }
+    }
+
+    typeLoop();
 </script>
 
 </body>
