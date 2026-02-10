@@ -9,23 +9,17 @@
 
 <!-- ===== NAVBAR ===== -->
 <nav id="mainNav">
-    <div class="nav-left">
-        <img src="images/profile.jpg" class="nav-avatar" alt="Arvind">
-        <h2>Arvind</h2>
-    </div>
-
+    <h2>Arvind</h2>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- ===== HERO VIDEO ===== -->
+<!-- ===== HERO VIDEO (NO CHANGE) ===== -->
 <section class="hero-video">
-
     <video autoplay muted loop playsinline class="bg-video">
         <source src="assets/header-bg.mp4" type="video/mp4">
     </video>
@@ -33,34 +27,100 @@
     <div class="overlay"></div>
 
     <div class="hero-content">
-        <img src="images/profile.jpg" class="hero-profile" alt="Arvind Chaudhary">
-
         <h1>Arvind Chaudhary</h1>
         <p><strong>Marketing Executive | MBA (Marketing)</strong></p>
-
         <p>
-            Results-driven marketing professional with experience in sales strategy,
-            lead generation, business development, and customer relationship management.
-            Focused on measurable growth and long-term value.
+            Results-driven marketing professional focused on business growth,
+            lead generation, and long-term client relationships.
         </p>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="resume/Arvind-Chaudhary-Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+</section>
 
-        <a href="contact.html" class="btn">Contact Me</a>
-        <a href="resume/Arvind-Chaudhary-Resume.pdf" class="btn" download>
-            Download Resume
-        </a>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section light">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a motivated Marketing Executive based in Lucknow with an MBA in Marketing.
+            I bring hands-on experience in sales operations, business development, and
+            customer relationship management.
+        </p>
+        <p>
+            I follow a customer-centric and data-driven approach, focusing on converting
+            insights into actionable strategies that deliver measurable business outcomes.
+        </p>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section gray">
+    <div class="container">
+        <h2>Professional Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">Marketing & Sales Strategy</div>
+            <div class="skill-card">CRM & Client Handling</div>
+            <div class="skill-card">Lead Generation & Conversion</div>
+            <div class="skill-card">Business Development</div>
+            <div class="skill-card">Negotiation & Deal Closure</div>
+            <div class="skill-card">Communication & Presentation</div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section light">
+    <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
+                <p><em>June 2024 – Present</em></p>
+                <p>
+                    Supporting sales operations, business development, and client management.
+                    Actively involved in lead generation, negotiations, and promotional campaigns.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Marketing Intern – PNB MetLife</h3>
+                <p><em>Summer Internship</em></p>
+                <p>
+                    Contributed to a 25% increase in qualified leads and a 30% improvement
+                    in conversion rates through effective customer engagement.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section gray">
+    <div class="container center">
+        <h2>Contact</h2>
+        <p>Let’s connect for opportunities and collaborations.</p>
+
+        <div class="contact-links">
+            <a href="tel:+919026217441">📞 Call</a>
+            <a href="mailto:arvindchaudhary9651@gmail.com">📧 Email</a>
+            <a href="https://wa.me/919026217441" target="_blank">💬 WhatsApp</a>
+            <a href="https://www.linkedin.com/in/arvind-chaudhary14/" target="_blank">🔗 LinkedIn</a>
+        </div>
     </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2026 Arvind Chaudhary | Marketing Professional</p>
+    © 2026 Arvind Chaudhary | Marketing & Business Development
 </footer>
 
 <script>
     const nav = document.getElementById("mainNav");
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 120) nav.classList.add("scrolled");
-        else nav.classList.remove("scrolled");
+        nav.classList.toggle("scrolled", window.scrollY > 100);
     });
 </script>
 
