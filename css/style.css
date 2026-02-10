@@ -48,10 +48,6 @@ nav ul li a:hover {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .bg-video {
@@ -68,28 +64,31 @@ nav ul li a:hover {
     background: rgba(15, 23, 42, 0.65);
 }
 
+/* ===== FULL SCREEN NAME ===== */
 .hero-content {
     position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
-    max-width: 700px;
-    padding: 20px;
+    font-size: clamp(48px, 10vw, 120px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+/* typing cursor */
+.cursor {
+    margin-left: 8px;
+    animation: blink 1s infinite;
 }
 
-/* ===== BUTTON ===== */
-.btn {
-    display: inline-block;
-    margin: 12px 6px;
-    padding: 12px 26px;
-    background: #38bdf8;
-    color: #020617;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
 }
 
 /* ===== SECTIONS ===== */
@@ -167,9 +166,5 @@ footer {
     nav {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 30px;
     }
 }
