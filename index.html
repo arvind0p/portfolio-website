@@ -68,22 +68,27 @@ background:linear-gradient(135deg,#0f172a,#1e293b);
 
 .hero-content{
 max-width:850px;
-animation:fadeIn 1.2s ease-in-out;
 }
 
-.hero h1{
-font-size:50px;
+/* TYPEWRITER */
+.typewriter{
+font-size:60px;
 font-weight:800;
-margin-bottom:20px;
+border-right:3px solid #38bdf8;
+white-space:nowrap;
+overflow:hidden;
+display:inline-block;
+color:#ffffff;
 }
 
 .hero h3{
 color:#38bdf8;
-margin-bottom:20px;
+margin-top:20px;
 font-weight:600;
 }
 
 .hero p{
+margin-top:20px;
 font-size:18px;
 opacity:0.9;
 }
@@ -171,14 +176,8 @@ padding:40px;
 background:#020617;
 color:#94a3b8;
 }
-
-/* ANIMATION */
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
-}
-
 </style>
+
 </head>
 
 <body>
@@ -197,11 +196,11 @@ to{opacity:1;transform:translateY(0);}
 <!-- HERO -->
 <div class="hero">
 <div class="hero-content">
-<h1>Clarity-Driven Branding for High-Growth Startups</h1>
+<h1 class="typewriter" id="typewriter"></h1>
 <h3>Branding & Growth Strategist | MBA (Marketing)</h3>
 <p>
-I help founder-led startups refine positioning, clarify messaging,
-and increase conversion performance before scaling.
+Helping founder-led startups refine positioning,
+clarify messaging, and increase conversion performance.
 </p>
 </div>
 </div>
@@ -249,28 +248,16 @@ Focused on measurable performance growth and clarity-first branding.
 <div class="card">
 <h3>Clicknify</h3>
 <p class="highlight">Marketing Executive & Branding Expert (Present)</p>
-<p>
-Develop structured positioning systems and clarity-first messaging
-frameworks for early-stage startups.
-</p>
 </div>
 
 <div class="card">
 <h3>Artistick’s Art Forum Pvt. Ltd.</h3>
 <p class="highlight">Marketing Executive (2024)</p>
-<p>
-Supported sales operations, CRM systems, client retention,
-and promotional campaign execution.
-</p>
 </div>
 
 <div class="card">
 <h3>PNB MetLife</h3>
 <p class="highlight">Marketing Intern</p>
-<p>
-Contributed to 25% increase in qualified leads
-and 30% improvement in conversion rate.
-</p>
 </div>
 
 </div>
@@ -312,6 +299,23 @@ and 30% improvement in conversion rate.
 <footer>
 © 2026 Arvind Chaudhary | Startup Branding & Growth Strategist
 </footer>
+
+<script>
+const text = "Arvind Chaudhary";
+let index = 0;
+const speed = 100;
+const element = document.getElementById("typewriter");
+
+function typeWriter() {
+if (index < text.length) {
+element.innerHTML += text.charAt(index);
+index++;
+setTimeout(typeWriter, speed);
+}
+}
+
+window.onload = typeWriter;
+</script>
 
 </body>
 </html>
