@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Arvind Chaudhary | Branding & Marketing Strategist for Startups</title>
+<title>Arvind Chaudhary | Startup Branding & Growth Strategist</title>
 
 <meta name="description" content="Arvind Chaudhary is a Branding & Marketing Strategist helping startups improve positioning, generate qualified leads, and increase conversion rates. MBA in Marketing based in India.">
 
@@ -17,21 +17,19 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Poppins',sans-serif;background:#0f172a;color:#f1f5f9;line-height:1.7;}
-nav{display:flex;justify-content:space-between;align-items:center;padding:25px 5%;position:absolute;width:100%;z-index:10;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:25px 5%;position:fixed;width:100%;background:#0f172a;z-index:1000;}
 nav h2{font-weight:800;}
 nav ul{list-style:none;display:flex;gap:20px;}
 nav a{text-decoration:none;color:#fff;font-weight:500;}
-.container{width:90%;max-width:1100px;margin:auto;padding:80px 0;}
+.container{width:90%;max-width:1100px;margin:auto;padding:100px 0;}
 .section-title{text-align:center;font-size:32px;margin-bottom:50px;font-weight:700;}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
 .card{background:#1e293b;padding:30px;border-radius:18px;transition:0.3s;}
 .card:hover{transform:translateY(-6px);}
 .card h3{margin-bottom:15px;color:#38bdf8;}
 .highlight{color:#38bdf8;font-weight:600;}
-.hero-video{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;}
-.bg-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
-.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);z-index:-1;}
-.hero-content{max-width:800px;padding:20px;}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('assets/header-bg.jpg') center/cover no-repeat;}
+.hero-content{max-width:800px;}
 .hero-content h1{font-size:46px;font-weight:800;margin-bottom:15px;}
 .hero-content h3{color:#38bdf8;margin-bottom:20px;}
 .achievement-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;text-align:center;}
@@ -40,6 +38,7 @@ nav a{text-decoration:none;color:#fff;font-weight:500;}
 .contact-links{margin-top:20px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
 .contact-links a{background:#1e293b;padding:10px 20px;border-radius:8px;text-decoration:none;color:#f1f5f9;}
 footer{text-align:center;padding:30px;background:#020617;color:#94a3b8;}
+ul{margin-left:20px;margin-top:10px;}
 </style>
 
 <!-- SCHEMA MARKUP -->
@@ -50,28 +49,10 @@ footer{text-align:center;padding:30px;background:#020617;color:#94a3b8;}
 "name":"Arvind Chaudhary",
 "jobTitle":"Branding & Marketing Strategist",
 "description":"Branding and marketing professional helping startups improve positioning, messaging clarity, lead generation, and conversion rates.",
-"address":{
-"@type":"PostalAddress",
-"addressCountry":"India"
-},
-"alumniOf":{
-"@type":"CollegeOrUniversity",
-"name":"Babu Banarasi Das University"
-},
-"worksFor":[
-{
-"@type":"Organization",
-"name":"Clicknify"
-}
-],
-"knowsAbout":[
-"Startup Branding",
-"SaaS Positioning",
-"Lead Generation",
-"CRM Management",
-"Business Development",
-"Conversion Optimization"
-]
+"address":{"@type":"PostalAddress","addressCountry":"India"},
+"alumniOf":{"@type":"CollegeOrUniversity","name":"Babu Banarasi Das University"},
+"worksFor":[{"@type":"Organization","name":"Clicknify"}],
+"knowsAbout":["Startup Branding","SaaS Positioning","Lead Generation","CRM Management","Business Development","Conversion Optimization"]
 }
 </script>
 
@@ -89,18 +70,14 @@ footer{text-align:center;padding:30px;background:#020617;color:#94a3b8;}
 </ul>
 </nav>
 
-<!-- HERO WITH VIDEO -->
-<section class="hero-video">
-<video class="bg-video" autoplay muted loop playsinline>
-<source src="assets/header-bg.mp4" type="video/mp4">
-</video>
-<div class="overlay"></div>
+<!-- HERO -->
+<section class="hero">
 <div class="hero-content">
 <h1>Helping Startups Improve Positioning & Conversions</h1>
-<h3>Branding & Marketing Strategist | MBA (Marketing)</h3>
+<h3>Branding & Growth Strategist | MBA (Marketing)</h3>
 <p>
-Performance-driven marketing professional specializing in startup positioning,
-conversion-focused messaging, structured sales execution, and long-term revenue growth.
+Clarity-driven branding professional helping founder-led startups refine positioning,
+optimize messaging, generate qualified leads, and drive measurable revenue growth.
 </p>
 </div>
 </section>
@@ -110,9 +87,14 @@ conversion-focused messaging, structured sales execution, and long-term revenue 
 <h2 class="section-title">Professional Summary</h2>
 <div class="card">
 <p>
-MBA in Marketing with hands-on experience across branding strategy,
-business development, CRM management, and lead generation systems.
-Focused on clarity-driven positioning and measurable performance improvement.
+MBA in Marketing with hands-on experience across branding strategy, startup positioning,
+business development, CRM management, and structured lead generation systems.
+Focused on clarity-first positioning and measurable performance improvement.
+</p>
+<p>
+Currently serving as Marketing Executive & Branding Expert at Clicknify,
+collaborating with founder-led startups to refine value propositions,
+optimize landing page communication, and align business objectives with customer expectations.
 </p>
 </div>
 </section>
@@ -124,17 +106,35 @@ Focused on clarity-driven positioning and measurable performance improvement.
 
 <div class="card">
 <h3>Branding & Strategy</h3>
-<p>Startup Positioning<br>SaaS & D2C Messaging<br>Conversion Copywriting<br>Brand Clarity Frameworks</p>
+<ul>
+<li>Startup Positioning</li>
+<li>SaaS & D2C Messaging</li>
+<li>Conversion Copywriting</li>
+<li>Brand Clarity Frameworks</li>
+<li>Market & Competitor Analysis</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Sales & Growth</h3>
-<p>Lead Generation Systems<br>CRM Management<br>Consultative Selling<br>Revenue Optimization</p>
+<ul>
+<li>Lead Generation Systems</li>
+<li>CRM Management</li>
+<li>Consultative Selling</li>
+<li>Revenue Optimization</li>
+<li>Sales Pipeline Monitoring</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Professional Strengths</h3>
-<p>Problem Solving<br>Critical Thinking<br>Time Management<br>Team Motivation<br>Communication Excellence</p>
+<ul>
+<li>Problem Solving</li>
+<li>Critical Thinking</li>
+<li>Time Management</li>
+<li>Communication Excellence</li>
+<li>Adaptability & Learning Agility</li>
+</ul>
 </div>
 
 </div>
@@ -148,31 +148,37 @@ Focused on clarity-driven positioning and measurable performance improvement.
 <div class="card">
 <h3>Marketing Executive & Branding Expert – Clicknify</h3>
 <p class="highlight">November 2024 – Present</p>
-<p>
-Working with founder-led startups to clarify positioning and improve
-conversion performance before design execution.  
-Develop brand messaging frameworks, optimize landing page communication,
-and support UI/UX teams with clarity-first brand strategy.
-</p>
+<ul>
+<li>Develop structured positioning strategies for SaaS & D2C startups.</li>
+<li>Design messaging frameworks for value clarity & differentiation.</li>
+<li>Optimize landing pages for improved conversion performance.</li>
+<li>Conduct brand audits to eliminate messaging inconsistencies.</li>
+<li>Align founders’ vision with structured brand narratives.</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
 <p class="highlight">June 2024 – November 2024</p>
-<p>
-Supported structured sales operations, client lifecycle engagement,
-business development initiatives, negotiation support, and promotional campaigns.
-Contributed to revenue generation and improved customer retention processes.
-</p>
+<ul>
+<li>Lead generation & structured prospecting systems.</li>
+<li>Managed CRM workflows & pipeline tracking.</li>
+<li>Supported negotiation & deal closure processes.</li>
+<li>Coordinated exhibitions & promotional campaigns.</li>
+<li>Strengthened long-term client relationships.</li>
+</ul>
 </div>
 
 <div class="card">
 <h3>Marketing Intern – PNB MetLife</h3>
 <p class="highlight">Summer Internship</p>
-<p>
-Implemented structured follow-up systems and consultative engagement,
-contributing to a 25% increase in qualified leads and 30% improvement in conversion rates.
-</p>
+<ul>
+<li>Structured outbound lead qualification.</li>
+<li>Maintained CRM follow-up systems.</li>
+<li>Applied consultative selling methods.</li>
+<li>Contributed to 25% increase in qualified leads.</li>
+<li>Supported 30% improvement in conversion rates.</li>
+</ul>
 </div>
 
 </div>
@@ -188,7 +194,7 @@ contributing to a 25% increase in qualified leads and 30% improvement in convers
 </div>
 <div class="achievement-card">
 <h3>30%</h3>
-<p>Improvement in Conversion Rate</p>
+<p>Improved Conversion Rate</p>
 </div>
 <div class="achievement-card">
 <h3>20+</h3>
@@ -209,7 +215,7 @@ contributing to a 25% increase in qualified leads and 30% improvement in convers
 </section>
 
 <footer>
-© 2026 Arvind Chaudhary | Branding & Marketing Strategist
+© 2026 Arvind Chaudhary | Startup Branding & Growth Strategist
 </footer>
 
 </body>
