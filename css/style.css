@@ -96,21 +96,28 @@ nav ul li a:hover {
     font-size: 15px;
 }
 
-/* Resume Button */
+/* ================= PREMIUM RESUME BUTTON ================= */
 .resume-btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 28px;
-    background: linear-gradient(135deg,#0284c7,#0ea5e9);
-    color: white;
-    border-radius: 30px;
+    margin-top: 25px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: #ffffff;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s ease;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
 }
 
 .resume-btn:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.5);
+}
+
+.resume-btn:active {
+    transform: scale(0.96);
 }
 
 /* ================= SECTIONS ================= */
