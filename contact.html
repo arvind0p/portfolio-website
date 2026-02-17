@@ -1,40 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact | Arvind Chaudhary</title>
-<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Arvind Chaudhary – Startup Branding & Growth Strategist</title>
+
+<meta name="description" content="Connect with Arvind Chaudhary – Branding & Marketing Strategist helping startups improve positioning, conversions, and revenue growth.">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#0f172a;
+--card:#1e293b;
+--text:#f1f5f9;
+--accent:#38bdf8;
+}
+
+body.light{
+--bg:#f8fafc;
+--card:#ffffff;
+--text:#0f172a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Poppins',sans-serif;
+background:var(--bg);
+color:var(--text);
+transition:0.3s;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+}
+
+nav h2{font-weight:800;}
+
+.toggle-btn{
+cursor:pointer;
+padding:8px 14px;
+border-radius:20px;
+background:var(--card);
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:80px 0;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+font-weight:700;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:var(--card);
+padding:30px;
+border-radius:18px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:var(--accent);
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:var(--accent);
+color:#000;
+border-radius:8px;
+text-decoration:none;
+margin-top:15px;
+font-weight:600;
+border:none;
+cursor:pointer;
+}
+
+form{
+margin-top:40px;
+display:grid;
+gap:15px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+input,textarea{
+padding:12px;
+border-radius:8px;
+border:none;
+}
+
+textarea{resize:none;height:120px;}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:60px;
+opacity:0.7;
+}
+</style>
+
 </head>
 <body>
 
 <nav>
 <h2>Arvind Chaudhary</h2>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="experience.html">Experience</a></li>
-</ul>
+<div class="toggle-btn" onclick="toggleMode()">Toggle Mode</div>
 </nav>
 
-<section class="section light">
-<div class="container center">
+<section class="container">
 
-<h2>Contact Information</h2>
+<h2 class="section-title">Let’s Build Scalable Growth Together</h2>
 
-<p>Scan the QR Code below or choose your preferred platform to connect.</p>
+<p>
+Open to international startup collaborations, branding consulting,
+marketing leadership roles, and performance-driven growth discussions.
+Based in India. Available for Remote & Global Projects.
+</p>
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.linkedin.com/in/arvind-chaudhary14/"
-style="background:white;padding:10px;border-radius:12px;">
+<!-- CONTACT CARDS -->
 
-<div class="contact-links">
-<a href="tel:+919026217441">Call</a>
-<a href="mailto:arvindchaudhary9651@gmail.com">Email</a>
-<a href="https://wa.me/919026217441">WhatsApp</a>
-<a href="https://www.linkedin.com/in/arvind-chaudhary14/">LinkedIn</a>
+<div class="card-grid">
+
+<div class="card">
+<h3>Email</h3>
+<p>arvindchaudhary9651@gmail.com</p>
+<a href="mailto:arvindchaudhary9651@gmail.com" class="btn">Send Email</a>
+</div>
+
+<div class="card">
+<h3>WhatsApp</h3>
+<p>Quick startup discussion</p>
+<a href="https://wa.me/919026217441" class="btn">Chat Now</a>
+</div>
+
+<div class="card">
+<h3>LinkedIn</h3>
+<p>Professional networking</p>
+<a href="https://www.linkedin.com/in/arvind-chaudhary14/" class="btn">View Profile</a>
+</div>
+
+<div class="card">
+<h3>Book Strategy Call</h3>
+<p>30-minute clarity session</p>
+<a href="https://calendly.com/YOUR-CALENDLY-LINK" class="btn">Book on Calendly</a>
 </div>
 
 </div>
+
+<!-- SIMPLE CONTACT FORM (NO BACKEND NEEDED) -->
+
+<h2 class="section-title">Send a Direct Message</h2>
+
+<form onsubmit="sendMail(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message"></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+
+<!-- TESTIMONIALS -->
+
+<h2 class="section-title">What Founders Say</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<p>
+"Arvind helped us refine our positioning and improve clarity across our landing pages.
+Engagement improved significantly within weeks."
+</p>
+<strong>— SaaS Founder</strong>
+</div>
+
+<div class="card">
+<p>
+"Strategic, structured, and highly focused on measurable growth.
+His clarity-first approach makes a real difference."
+</p>
+<strong>— D2C Startup Owner</strong>
+</div>
+
+</div>
+
+<!-- CONSULTING CTA -->
+
+<h2 class="section-title">Founder-Focused Consulting</h2>
+
+<p>
+If your startup struggles with unclear positioning, low conversions,
+or scattered messaging — I help you fix clarity before scaling.
+</p>
+
+<a href="mailto:arvindchaudhary9651@gmail.com" class="btn">
+Start a Growth Conversation
+</a>
+
 </section>
+
+<footer>
+© 2026 Arvind Chaudhary | International Startup Branding & Growth Strategist
+</footer>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("light");
+}
+
+function sendMail(e){
+e.preventDefault();
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var message=document.getElementById("message").value;
+
+var subject="New Message from "+name;
+var body="Name: "+name+"%0D%0AEmail: "+email+"%0D%0A%0D%0AMessage:%0D%0A"+message;
+
+window.location.href="mailto:arvindchaudhary9651@gmail.com?subject="+subject+"&body="+body;
+}
+</script>
 
 </body>
 </html>
