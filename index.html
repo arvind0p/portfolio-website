@@ -21,7 +21,7 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',Arial,Helvetica,sans-serif;
+font-family:'Poppins',sans-serif;
 background:#0f172a;
 color:#f1f5f9;
 line-height:1.8;
@@ -44,20 +44,15 @@ backdrop-filter:blur(10px);
 z-index:1000;
 }
 
-nav h2{
-font-weight:800;
-}
-
 nav ul{
-list-style:none;
 display:flex;
 gap:30px;
+list-style:none;
 }
 
 nav a{
-text-decoration:none;
 color:white;
-transition:.3s;
+text-decoration:none;
 }
 
 nav a:hover{
@@ -65,7 +60,7 @@ color:#38bdf8;
 }
 
 
-/* HERO WITH VIDEO */
+/* HERO */
 
 .hero{
 height:100vh;
@@ -79,8 +74,6 @@ overflow:hidden;
 
 .hero-video{
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
 object-fit:cover;
@@ -89,23 +82,15 @@ z-index:-2;
 
 .hero-overlay{
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
-background:rgba(15,23,42,0.75);
+background:rgba(0,0,0,0.6);
 z-index:-1;
 }
 
 .hero-content{
-position:relative;
-z-index:2;
 max-width:900px;
-padding:20px;
 }
-
-
-/* TYPEWRITER */
 
 .typewriter{
 font-size:60px;
@@ -114,16 +99,6 @@ border-right:3px solid #38bdf8;
 white-space:nowrap;
 overflow:hidden;
 display:inline-block;
-}
-
-.hero h3{
-color:#38bdf8;
-margin-top:20px;
-}
-
-.hero p{
-margin-top:20px;
-font-size:18px;
 }
 
 
@@ -135,9 +110,8 @@ padding:120px 8%;
 
 .section-title{
 text-align:center;
-font-size:34px;
+font-size:36px;
 margin-bottom:50px;
-font-weight:700;
 }
 
 
@@ -145,50 +119,63 @@ font-weight:700;
 
 .card{
 background:#1e293b;
-padding:35px;
+padding:40px;
 border-radius:15px;
+max-width:1000px;
+margin:auto;
 margin-bottom:30px;
 }
 
-.card h3{
-color:#38bdf8;
-margin-bottom:10px;
+
+/* CONTACT PREMIUM */
+
+#contact{
+background:linear-gradient(135deg,#020617,#0f172a);
+}
+
+.contact-wrapper{
+max-width:1000px;
+margin:auto;
+background:#1e293b;
+padding:60px;
+border-radius:25px;
+text-align:center;
+}
+
+.contact-links{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.contact-links a{
+background:#0f172a;
+padding:15px 35px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact-links a:hover{
+background:#38bdf8;
+color:black;
 }
 
 
-<!-- CONTACT -->
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
 
-<section id="contact">
+</style>
+</head>
 
-<div class="contact-wrapper">
+<body>
 
-<h2>Let’s Work Together</h2>
-
-<p>
-Interested in branding, marketing strategy, startup growth,
-or professional collaboration?  
-Feel free to connect with me using the links below.
-</p>
-
-<div class="contact-links">
-
-<a href="mailto:arvindchaudhary9651@gmail.com">
-Email
-</a>
-
-<a href="https://wa.me/919026217441">
-WhatsApp
-</a>
-
-<a href="https://www.linkedin.com/in/arvind-chaudhary14/">
-LinkedIn
-</a>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- NAV -->
 
@@ -206,7 +193,7 @@ LinkedIn
 
 
 
-<!-- HERO WITH VIDEO -->
+<!-- HERO -->
 
 <div class="hero">
 
@@ -222,9 +209,7 @@ LinkedIn
 
 <h3>Branding & Growth Strategist | MBA Marketing</h3>
 
-<p>
-Helping startups improve positioning, branding and conversion performance
-</p>
+<p>Helping startups improve positioning and conversion</p>
 
 </div>
 
@@ -232,7 +217,7 @@ Helping startups improve positioning, branding and conversion performance
 
 
 
-<!-- ABOUT -->
+<!-- SUMMARY -->
 
 <section id="about">
 
@@ -240,10 +225,21 @@ Helping startups improve positioning, branding and conversion performance
 
 <div class="card">
 
-MBA in Marketing with hands-on experience in branding,
-lead generation, CRM, sales strategy and startup positioning.
+<p>
+MBA in Marketing with strong hands-on experience in branding strategy,
+lead generation, CRM management, and startup positioning.
 
-Focused on conversion driven marketing and business growth.
+Skilled in helping businesses improve communication clarity,
+customer engagement, and conversion performance through structured
+marketing and sales processes.
+
+Experienced in working with startups, service-based companies,
+and founder-led teams to build strong positioning, improve
+customer journeys, and support business growth.
+
+Focused on data-driven decision making, consultative selling,
+and performance-based marketing execution.
+</p>
 
 </div>
 
@@ -260,111 +256,55 @@ Focused on conversion driven marketing and business growth.
 
 <div class="card">
 
-<h3>Marketing Executive & Branding Strategist – Clicknify</h3>
-
-<p><em>Nov 2024 – Present | Startup Branding & UI/UX Agency</em></p>
+<h3>Marketing Executive – Clicknify</h3>
 
 <p>
-Working as a Marketing Executive & Branding Strategist at Clicknify, 
-where I collaborate with startup founders to refine brand positioning, 
-improve messaging clarity, and build conversion-focused communication systems.
-
-My role focuses on creating structured branding frameworks, optimizing 
-customer journeys, and ensuring that marketing efforts are aligned with 
-measurable business growth objectives.
+Brand positioning, messaging strategy, and startup marketing.
+Worked closely with founders to improve conversion clarity.
 </p>
 
-<ul>
-
-<li>Develop brand positioning strategies for early-stage startups and service-based businesses.</li>
-
-<li>Design conversion-focused messaging to improve landing page clarity and engagement.</li>
-
-<li>Work closely with founders to define value propositions and competitive differentiation.</li>
-
-<li>Support UI/UX and marketing teams by providing clear brand direction before execution.</li>
-
-<li>Conduct brand audits to identify gaps in communication, targeting, and positioning.</li>
-
-<li>Create structured marketing workflows to improve lead quality and conversion performance.</li>
-
-</ul>
-
 </div>
-
 
 
 <div class="card">
 
-<h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
-
-<p><em>June 2024 – Nov 2024 | Lucknow, India</em></p>
+<h3>Marketing Executive – Artistick Art Forum</h3>
 
 <p>
-Handled marketing operations, client coordination, and business development 
-activities while supporting revenue generation through structured sales and 
-relationship management processes.
+Sales coordination, CRM management, exhibitions,
+lead generation, and client relationship handling.
 </p>
 
-<ul>
-
-<li>Generated and qualified leads through structured outreach and follow-up systems.</li>
-
-<li>Maintained CRM records to track customer interactions and sales pipeline progress.</li>
-
-<li>Coordinated exhibitions, promotional campaigns, and marketing events.</li>
-
-<li>Supported negotiation and deal closure activities with prospective clients.</li>
-
-<li>Built long-term client relationships through consultative communication.</li>
-
-<li>Contributed to revenue growth by improving lead handling and follow-up efficiency.</li>
-
-</ul>
-
 </div>
-
 
 
 <div class="card">
 
 <h3>Marketing Intern – PNB MetLife</h3>
 
-<p><em>Summer Internship | Sales & Marketing Division</em></p>
-
 <p>
-Completed a structured internship program in the Sales & Marketing division, 
-gaining hands-on experience in lead generation, CRM management, outbound 
-communication, and performance tracking.
+Lead generation, CRM updates, outbound communication,
+and performance tracking.
 </p>
-
-<ul>
-
-<li>Conducted outbound communication to qualify potential leads.</li>
-
-<li>Maintained accurate CRM data and scheduled follow-ups.</li>
-
-<li>Applied consultative selling techniques to understand customer needs.</li>
-
-<li>Assisted senior sales professionals in tracking conversion metrics.</li>
-
-<li>Supported data analysis to identify improvement opportunities.</li>
-
-<li><strong>Achievement:</strong> Contributed to 25% increase in qualified leads and 30% improvement in conversion rate.</li>
-
-</ul>
 
 </div>
 
-
 </section>
+
 
 
 <!-- CONTACT -->
 
 <section id="contact">
 
-<h2 class="section-title">Contact</h2>
+<div class="contact-wrapper">
+
+<h2>Let’s Work Together</h2>
+
+<p>
+For branding, marketing, startup growth, or collaboration,
+feel free to contact me.
+</p>
 
 <div class="contact-links">
 
@@ -372,7 +312,11 @@ communication, and performance tracking.
 
 <a href="https://wa.me/919026217441">WhatsApp</a>
 
-<a href="https://www.linkedin.com/">LinkedIn</a>
+<a href="https://www.linkedin.com/in/arvind-chaudhary14/">
+LinkedIn
+</a>
+
+</div>
 
 </div>
 
@@ -391,23 +335,14 @@ communication, and performance tracking.
 <script>
 
 const text="Arvind Chaudhary";
-
 let i=0;
 
-const speed=100;
-
 function type(){
-
 if(i<text.length){
-
 document.getElementById("typewriter").innerHTML+=text.charAt(i);
-
 i++;
-
-setTimeout(type,speed);
-
+setTimeout(type,100);
 }
-
 }
 
 window.onload=type;
