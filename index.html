@@ -18,9 +18,7 @@
 <!-- NAV -->
 
 <nav>
-
 <h2>Arvind Chaudhary</h2>
-
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -29,7 +27,6 @@
 <li><a href="#achievements">Achievements</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 </nav>
 
 
@@ -45,15 +42,9 @@
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
-
 <h1 class="typewriter" id="typewriter"></h1>
-
 <h3>Branding & Growth Strategist | MBA Marketing</h3>
-
-<p>
-Helping startups improve positioning and conversion performance
-</p>
-
+<p>Helping startups improve positioning and conversion performance</p>
 </div>
 
 </div>
@@ -63,29 +54,14 @@ Helping startups improve positioning and conversion performance
 <!-- SUMMARY -->
 
 <section id="about">
-
 <h2 class="section-title">Professional Summary</h2>
-
 <div class="card">
-
 <p>
 MBA in Marketing with strong hands-on experience in branding strategy,
 lead generation, CRM management, and startup positioning.
-
-Skilled in helping businesses improve communication clarity,
-customer engagement, and conversion performance through structured
-marketing and sales processes.
-
-Experienced in working with startups, service-based companies,
-and founder-led teams to build strong positioning, improve
-customer journeys, and support business growth.
-
-Focused on data-driven decision making, consultative selling,
-and performance-based marketing execution.
+Skilled in improving communication clarity, engagement, and conversion.
 </p>
-
 </div>
-
 </section>
 
 
@@ -98,59 +74,53 @@ and performance-based marketing execution.
 <div class="card">
 <h3>Marketing Executive – Clicknify</h3>
 <ul>
-<li>Worked on startup branding, positioning, and marketing strategy</li>
-<li>Improved website communication and content clarity</li>
-<li>Collaborated on campaigns and promotional activities</li>
-<li>Supported content planning and customer engagement</li>
+<li>Startup branding, positioning & marketing strategy</li>
+<li>Improved website communication clarity</li>
+<li>Worked on campaigns & promotional ideas</li>
+<li>Supported content planning & engagement</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
 <ul>
-<li>Handled customer inquiries and supported sales operations</li>
-<li>Managed lead tracking and follow-ups</li>
-<li>Assisted in exhibitions and promotional events</li>
-<li>Coordinated with clients and improved engagement</li>
+<li>Handled customer inquiries & sales support</li>
+<li>Managed leads & follow-ups</li>
+<li>Assisted in exhibitions & events</li>
+<li>Improved client communication</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Marketing Intern – PNB MetLife</h3>
 <ul>
-<li>Assisted in lead generation and customer outreach</li>
-<li>Maintained customer records and follow-ups</li>
-<li>Supported daily sales and marketing activities</li>
-<li>Learned customer handling and sales communication</li>
+<li>Lead generation & outreach</li>
+<li>Maintained records & follow-ups</li>
+<li>Supported daily sales tasks</li>
+<li>Learned customer handling</li>
 </ul>
 </div>
 
 </section>
 
 
+
 <!-- SKILLS -->
 
 <section id="skills">
-
 <h2 class="section-title">Core Skills</h2>
-
 <div class="card">
-
 <ul>
-
-<li>Branding & Positioning understanding</li>
-<li>Marketing strategy basics</li>
-<li>Lead generation & customer handling</li>
-<li>CRM & follow-up management</li>
-<li>Communication & presentation skills</li>
-<li>Team coordination & event support</li>
-<li>Problem solving & learning ability</li>
-<li>MS Office & basic digital tools</li>
-
+<li>Branding & Positioning</li>
+<li>Marketing Strategy</li>
+<li>Lead Generation</li>
+<li>CRM Management</li>
+<li>Communication Skills</li>
+<li>Team Coordination</li>
+<li>Problem Solving</li>
+<li>MS Office</li>
 </ul>
-
 </div>
-
 </section>
 
 
@@ -158,26 +128,16 @@ and performance-based marketing execution.
 <!-- ACHIEVEMENTS -->
 
 <section id="achievements">
-
-<h2 class="section-title">Achievements & Highlights</h2>
-
+<h2 class="section-title">Achievements</h2>
 <div class="card">
-
 <ul>
-
-<li>Completed MBA in Marketing with practical business exposure</li>
-<li>Completed internship at PNB MetLife</li>
-<li>Worked in marketing & sales roles</li>
-<li>Handled clients and customer communication</li>
-<li>Participated in exhibitions and promotional events</li>
-<li>Improved confidence in professional communication</li>
-<li>Continuously learning branding & marketing concepts</li>
-<li>Focused on career growth in marketing & business roles</li>
-
+<li>MBA in Marketing</li>
+<li>Internship at PNB MetLife</li>
+<li>Marketing & Sales experience</li>
+<li>Client handling experience</li>
+<li>Event participation</li>
 </ul>
-
 </div>
-
 </section>
 
 
@@ -185,26 +145,17 @@ and performance-based marketing execution.
 <!-- CONTACT -->
 
 <section id="contact">
-
 <div class="contact-wrapper">
-
 <h2>Let’s Work Together</h2>
-
-<p>
-For branding, marketing, startup growth, or collaboration,
-feel free to contact me.
-</p>
+<p>For branding, marketing, or collaboration, feel free to contact me.</p>
 
 <div class="contact-links">
-
 <a href="mailto:arvindchaudhary9651@gmail.com">Email</a>
 <a href="https://wa.me/919026217441">WhatsApp</a>
 <a href="https://www.linkedin.com/in/arvind-chaudhary14/">LinkedIn</a>
-
 </div>
 
 </div>
-
 </section>
 
 
@@ -215,7 +166,11 @@ feel free to contact me.
 
 
 
+<!-- ================= JS START ================= -->
+
 <script>
+
+// TYPEWRITER
 const text="Arvind Chaudhary";
 let i=0;
 
@@ -227,11 +182,54 @@ setTimeout(type,100);
 }
 }
 
+
+// SCROLL ANIMATION
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 150;
+    const height = sec.offsetHeight;
+
+    if(top >= offset && top < offset + height){
+      sec.classList.add("show");
+    }
+  });
+});
+
+
+// ACTIVE NAVBAR
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(sec => {
+    const sectionTop = sec.offsetTop - 200;
+    if(window.scrollY >= sectionTop){
+      current = sec.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if(link.getAttribute("href") === "#" + current){
+      link.classList.add("active");
+    }
+  });
+});
+
+
+// ON LOAD
 window.onload=function(){
-window.scrollTo(0,0); // force home load
+window.scrollTo(0,0);
 type();
 };
+
 </script>
+
+<!-- ================= JS END ================= -->
 
 
 </body>
