@@ -1,151 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Arvind Chaudhary | Startup Branding & Growth Strategist</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-
-<!-- NAV -->
-
-<nav>
-<h2>Arvind Chaudhary</h2>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#achievements">Achievements</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-
-
-<!-- HERO -->
-
-<div class="hero" id="home">
-
-<video autoplay muted loop playsinline preload="auto" class="hero-video">
-<source src="assets/header-bg.mp4" type="video/mp4">
-</video>
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-<h1 class="typewriter" id="typewriter"></h1>
-<h3>Branding & Growth Strategist | MBA Marketing</h3>
-<p>Helping startups improve positioning and conversion performance</p>
-</div>
-
-</div>
-
-
-
-<!-- SUMMARY -->
-
-<section id="about">
-<h2 class="section-title">Professional Summary</h2>
-<div class="card">
-<p>
-MBA in Marketing with strong hands-on experience in branding strategy,
-lead generation, CRM management, and startup positioning.
-Skilled in improving communication clarity, engagement, and conversion.
-</p>
-</div>
-</section>
-
-
-
-<!-- EXPERIENCE -->
-<section id="experience">
-
-<h2 class="section-title">Professional Experience</h2>
-
-<div class="card">
-<h3>Marketing Executive – Clicknify</h3>
-<ul>
-<li>Startup branding, positioning & marketing strategy</li>
-<li>Improved website communication clarity</li>
-<li>Worked on campaigns & promotional ideas</li>
-<li>Supported content planning & engagement</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
-<ul>
-<li>Handled customer inquiries & sales support</li>
-<li>Managed leads & follow-ups</li>
-<li>Assisted in exhibitions & events</li>
-<li>Improved client communication</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Marketing Intern – PNB MetLife</h3>
-<ul>
-<li>Lead generation & outreach</li>
-<li>Maintained records & follow-ups</li>
-<li>Supported daily sales tasks</li>
-<li>Learned customer handling</li>
-</ul>
-</div>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section id="skills">
-<h2 class="section-title">Core Skills</h2>
-<div class="card">
-<ul>
-<li>Branding & Positioning</li>
-<li>Marketing Strategy</li>
-<li>Lead Generation</li>
-<li>CRM Management</li>
-<li>Communication Skills</li>
-<li>Team Coordination</li>
-<li>Problem Solving</li>
-<li>MS Office</li>
-</ul>
-</div>
-</section>
-
-
-
-<!-- ACHIEVEMENTS -->
-
-<section id="achievements">
-<h2 class="section-title">Achievements</h2>
-<div class="card">
-<ul>
-<li>MBA in Marketing</li>
-<li>Internship at PNB MetLife</li>
-<li>Marketing & Sales experience</li>
-<li>Client handling experience</li>
-<li>Event participation</li>
-</ul>
-</div>
-</section>
-
-
-
 <!-- CONTACT -->
 
 <section id="contact">
 <div class="contact-wrapper">
+
 <h2>Let’s Work Together</h2>
 <p>For branding, marketing, or collaboration, feel free to contact me.</p>
 
@@ -155,82 +12,18 @@ Skilled in improving communication clarity, engagement, and conversion.
 <a href="https://www.linkedin.com/in/arvind-chaudhary14/">LinkedIn</a>
 </div>
 
+<!-- PREMIUM QR CODE -->
+<div class="qr-section">
+<h3>Scan to Connect</h3>
+
+<div class="qr-card">
+<img 
+src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/919026217441" 
+alt="QR Code">
+</div>
+
+<p>Instant connect via WhatsApp</p>
+</div>
+
 </div>
 </section>
-
-
-
-<footer>
-© 2026 Arvind Chaudhary
-</footer>
-
-
-
-<!-- ================= JS START ================= -->
-
-<script>
-
-// TYPEWRITER
-const text="Arvind Chaudhary";
-let i=0;
-
-function type(){
-if(i<text.length){
-document.getElementById("typewriter").innerHTML+=text.charAt(i);
-i++;
-setTimeout(type,100);
-}
-}
-
-
-// SCROLL ANIMATION
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
-    const top = window.scrollY;
-    const offset = sec.offsetTop - 150;
-    const height = sec.offsetHeight;
-
-    if(top >= offset && top < offset + height){
-      sec.classList.add("show");
-    }
-  });
-});
-
-
-// ACTIVE NAVBAR
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(sec => {
-    const sectionTop = sec.offsetTop - 200;
-    if(window.scrollY >= sectionTop){
-      current = sec.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if(link.getAttribute("href") === "#" + current){
-      link.classList.add("active");
-    }
-  });
-});
-
-
-// ON LOAD
-window.onload=function(){
-window.scrollTo(0,0);
-type();
-};
-
-</script>
-
-<!-- ================= JS END ================= -->
-
-
-</body>
-</html>
