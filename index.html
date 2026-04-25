@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Arvind Chaudhary | Startup Branding & Growth Strategist</title>
+<title>Arvind Chaudhary | Branding & Growth Strategist</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS FILE -->
-<link rel="stylesheet" href="style.css">
+<!-- ✅ FIXED CSS PATH -->
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- NAV -->
 <nav>
   <h2>Arvind Chaudhary</h2>
   <ul>
@@ -28,19 +28,17 @@
   </ul>
 </nav>
 
-
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <div class="hero" id="home">
 
   <!-- VIDEO -->
   <video autoplay muted loop playsinline class="hero-video">
+    <!-- ✅ CORRECT PATH -->
     <source src="assets/header-bg.mp4" type="video/mp4">
   </video>
 
-  <!-- OVERLAY -->
   <div class="hero-overlay"></div>
 
-  <!-- CONTENT -->
   <div class="hero-content">
     <h1 id="typewriter"></h1>
     <h3>Branding & Growth Strategist | MBA Marketing</h3>
@@ -49,127 +47,71 @@
 
 </div>
 
-
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about">
   <h2 class="section-title">Professional Summary</h2>
   <div class="card">
     <p>
       MBA in Marketing with strong hands-on experience in branding strategy,
       lead generation, CRM management, and startup positioning.
-      Skilled in improving communication clarity, engagement, and conversion.
     </p>
   </div>
 </section>
 
-
-<!-- ================= EXPERIENCE ================= -->
+<!-- EXPERIENCE -->
 <section id="experience">
-  <h2 class="section-title">Professional Experience</h2>
+  <h2 class="section-title">Experience</h2>
 
   <div class="card">
     <h3>Marketing Executive – Clicknify</h3>
     <ul>
-      <li>Startup branding, positioning & marketing strategy</li>
-      <li>Improved website communication clarity</li>
-      <li>Worked on campaigns & promotional ideas</li>
-      <li>Supported content planning & engagement</li>
+      <li>Branding & strategy</li>
+      <li>Campaign execution</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Marketing Executive – Artistick’s Art Forum Pvt. Ltd.</h3>
+    <h3>Marketing Executive – Artistick’s Art Forum</h3>
     <ul>
-      <li>Handled customer inquiries & sales support</li>
-      <li>Managed leads & follow-ups</li>
-      <li>Assisted in exhibitions & events</li>
-      <li>Improved client communication</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Marketing Intern – PNB MetLife</h3>
-    <ul>
-      <li>Lead generation & outreach</li>
-      <li>Maintained records & follow-ups</li>
-      <li>Supported daily sales tasks</li>
-      <li>Learned customer handling</li>
+      <li>Lead management</li>
+      <li>Customer handling</li>
     </ul>
   </div>
 
 </section>
 
-
-<!-- ================= SKILLS ================= -->
+<!-- SKILLS -->
 <section id="skills">
-  <h2 class="section-title">Core Skills</h2>
+  <h2 class="section-title">Skills</h2>
   <div class="card">
     <ul>
-      <li>Branding & Positioning</li>
+      <li>Branding</li>
       <li>Marketing Strategy</li>
-      <li>Lead Generation</li>
-      <li>CRM Management</li>
-      <li>Communication Skills</li>
-      <li>Team Coordination</li>
-      <li>Problem Solving</li>
-      <li>MS Office</li>
+      <li>CRM</li>
+      <li>Communication</li>
     </ul>
   </div>
 </section>
 
-
-<!-- ================= ACHIEVEMENTS ================= -->
-<section id="achievements">
-  <h2 class="section-title">Achievements</h2>
-  <div class="card">
-    <ul>
-      <li>MBA in Marketing</li>
-      <li>Internship at PNB MetLife</li>
-      <li>Marketing & Sales experience</li>
-      <li>Client handling experience</li>
-      <li>Event participation</li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrapper">
 
-    <h2>Let’s Work Together</h2>
-    <p>For branding, marketing, or collaboration, feel free to contact me.</p>
+    <h2>Contact Me</h2>
 
     <div class="contact-links">
       <a href="mailto:arvindchaudhary9651@gmail.com">Email</a>
-      <a href="https://wa.me/919026217441" target="_blank">WhatsApp</a>
-      <a href="https://www.linkedin.com/in/arvind-chaudhary14/" target="_blank">LinkedIn</a>
-    </div>
-
-    <!-- QR CODE -->
-    <div class="qr-section">
-      <h3>Scan to Connect</h3>
-
-      <div class="qr-card">
-        <img 
-        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/919026217441" 
-        alt="WhatsApp QR Code">
-      </div>
-
-      <p>Instant connect via WhatsApp</p>
+      <a href="https://wa.me/919026217441">WhatsApp</a>
     </div>
 
   </div>
 </section>
 
-
-<!-- ================= FOOTER ================= -->
 <footer>
   © 2026 Arvind Chaudhary
 </footer>
 
-
-<!-- ================= JS ================= -->
+<!-- JS -->
 <script>
 
 // TYPEWRITER
@@ -184,45 +126,20 @@ function type(){
   }
 }
 
-// SCROLL ANIMATION
+// SCROLL
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
   sections.forEach(sec => {
-    const top = window.scrollY;
     const offset = sec.offsetTop - 150;
-    const height = sec.offsetHeight;
-
-    if(top >= offset && top < offset + height){
+    if(window.scrollY >= offset){
       sec.classList.add("show");
-    }
-  });
-});
-
-// ACTIVE NAV
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(sec => {
-    const sectionTop = sec.offsetTop - 200;
-    if(window.scrollY >= sectionTop){
-      current = sec.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if(link.getAttribute("href") === "#" + current){
-      link.classList.add("active");
     }
   });
 });
 
 // LOAD
 window.onload = function(){
-  window.scrollTo(0,0);
   type();
 };
 
